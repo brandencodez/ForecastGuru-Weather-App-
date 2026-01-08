@@ -71,9 +71,9 @@ Format your response as a bulleted list with emoji icons. Include health tips, c
           }
         ],
         temperature: 0.6,
-        max_tokens: 500,
+        max_tokens: 5000,
         top_p: 1,
-        stream: false
+        stream: true
       })
     });
 
