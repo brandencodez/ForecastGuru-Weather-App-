@@ -228,11 +228,11 @@ let weather = {
           <div class="spinner"></div>
         </div>
       </div>
-      <p>Generating personalized insights with Gemini AI...</p>
+      <p>Generating personalized insights with OpenAI...</p>
     `;
     
     try {
-      // Call serverless function instead of Gemini API directly
+      // Call serverless function instead of Groq API directly
       const response = await fetch('/api/insights', {
         method: 'POST',
         headers: {
@@ -274,7 +274,7 @@ let weather = {
         this.generateFallbackInsights(data);
       }
     } catch (error) {
-      console.error('Gemini API Error:', error);
+      console.error('Groq API Error:', error);
       // Use fallback insights if API fails
       document.getElementById('insights-loader').style.display = 'none';
       this.generateFallbackInsights(data);
@@ -432,7 +432,7 @@ let weather = {
           <div class="spinner"></div>
         </div>
       </div>
-      <p>Generating personalized insights with Gemini AI...</p>
+      <p>Generating personalized insights with  OpenAI...</p>
     `;
     
     try {
@@ -484,7 +484,7 @@ let weather = {
         this.generateFallbackInsights(data);
       }
     } catch (error) {
-      console.error('Gemini API Error:', error);
+      console.error('Groq API Error:', error);
       // Use fallback insights if API fails
       document.getElementById('insights-loader').style.display = 'none';
       this.generateFallbackInsights(data);
