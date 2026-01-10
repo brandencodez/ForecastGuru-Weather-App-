@@ -1,6 +1,6 @@
-# Real-Time Weather App (ForcastGuru) 🌤️
+# Real-Time Weather App (ForecastGuru) 🌤️
 
-ForecastGuru is a user-friendly weather application built using HTML, CSS, and JavaScrip that leverages real-time APIs for weather and geolocation data to help you navigate your day with ease
+ForecastGuru is a smart, user-friendly weather PWA, designed for both desktop and mobile users. Built with HTML, CSS, and JavaScript, it pulls real-time weather and geolocation data to provide accurate forecasts to help you navigate your day with ease
 
 **ForecastGuru offers:**
 * Future Weather at a Glance
@@ -8,7 +8,7 @@ ForecastGuru is a user-friendly weather application built using HTML, CSS, and J
 * Smart AI-Powered Insights
 
 # Deployed Version
-Check out the live deployed version here: [**https://forecastguru.vercel.app/**](https://forecastguru.vercel.app/)
+Explore the live deployment or download the app here: [**https://forecastguru.vercel.app/**](https://forecastguru.vercel.app/)
 
 ![Image](https://github.com/user-attachments/assets/956a6190-41dc-4581-ad5c-c2939f889bd5)
 ![Image](https://github.com/user-attachments/assets/ac439104-15ef-4241-a1ad-d2bc5bdf922f)
@@ -21,6 +21,7 @@ Check out the live deployed version here: [**https://forecastguru.vercel.app/**]
 - **Bootstrap 5**
 - **Open Weather API**
 - **Unsplash API**
+- **Groq API**
 
 # Steps to setup Unsplash API
 
@@ -29,12 +30,14 @@ Check out the live deployed version here: [**https://forecastguru.vercel.app/**]
 3) Get Your Access Key: Note down your Access Key from your application details.
 4) Integrate Access Key: Paste your Access Key in the unsplashAccessKey: "unsplash-api-key" section of your JavaScript code.
   
-# Steps to setup Gemini API
+### Groq API Setup
 
-1) Access Google AI Studio: Go to https://makersuite.google.com/app/apikey 
-2) Create a New API Key: If you don't have an existing API key, click on "Create new API key in new project" or a similar button.
-3) Get Your API Key: Note this key down carefully as you will need it to access the Gemini API.
-4) Integrate API Key: Paste your API key in the const apiKey = "GEMINI_ACCESS_KEY"; section of your JavaScript code
+1. Go to [Groq Console](https://console.groq.com/home)
+2. Create account → **API Keys** → **Create Key**
+3. Create `.env` file:
+```bash
+   GROQ_API_KEY=your_api_key_here
+```
 
 
 
